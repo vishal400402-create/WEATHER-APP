@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>🌦️ Weather App</h1>
+            <p>Check the current weather of any city</p>
+        </header>
+
+
+        <!-- Search -->
+        <section class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+            <button id="locationButton" class="location-btn">
+                📍 My Location
+            </button>
+
+        </section>
+
+
+        <!-- Loading -->
+        <p id="loadingMessage"></p>
+
+
+        <!-- Weather Card -->
+        <section id="weatherResult" class="weather-card">
+
+            <div class="weather-main">
+
+                <div>
+                    <h2 id="cityName">City Name</h2>
+                    <p id="description">Weather condition</p>
+                </div>
+
+                <div id="weatherIcon" class="weather-icon">
+                    ☀️
+                </div>
+
+            </div>
+
+
+            <p id="temperature">--°C</p>
+
+
+            <!-- Details -->
+            <div class="details">
+
+                <div class="detail-box">
+
+                    <span>💧</span>
+
+                    <p>Humidity</p>
+
+                    <strong>
+                        <span id="humidity">--</span>%
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <span>💨</span>
+
+                    <p>Wind Speed</p>
+
+                    <strong>
+                        <span id="wind">--</span> km/h
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Error -->
+        <p id="errorMessage"></p>
+
+
+        <!-- Last Search -->
+        <p id="lastSearch"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
